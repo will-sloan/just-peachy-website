@@ -1,5 +1,6 @@
+---
 deployment:
   tasks:
-    - export DEPLOYPATH=/home/yourcpaneluser/public_html/
+    - export DEPLOYPATH=/home/justqrta/public_html/
     - /bin/cp -R react-preview/dist/index.html $DEPLOYPATH
     - /bin/cp -R react-preview/dist/assets $DEPLOYPATH
