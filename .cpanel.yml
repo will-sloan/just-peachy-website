@@ -1,10 +1,5 @@
----
 deployment:
   tasks:
-    - export DEPLOYPATH=/home/justqrta/public_html/
-    - /bin/cp index.html $DEPLOYPATH
-    - /bin/cp about.html $DEPLOYPATH
-    - /bin/cp styles.css $DEPLOYPATH
-    - /bin/mkdir -p $DEPLOYPATH/assets
-    - /bin/cp assets/amir-laghai.jpg $DEPLOYPATH/assets/amir-laghai.jpg
-    - /bin/cp assets/will-sloan.jpg $DEPLOYPATH/assets/will-sloan.jpg
+    - export DEPLOYPATH=/home/yourcpaneluser/public_html/
+    - /bin/cp -R react-preview/dist/index.html $DEPLOYPATH
+    - /bin/cp -R react-preview/dist/assets $DEPLOYPATH
